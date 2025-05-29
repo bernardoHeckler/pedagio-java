@@ -13,7 +13,7 @@ public abstract class Veiculo {
         return eixo;
     }
 
-    public String getTipo() {
+    public final String getTipo() {
         return tipo;
     }
 
