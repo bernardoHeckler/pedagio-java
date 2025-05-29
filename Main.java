@@ -10,18 +10,18 @@ public class Main {
         Veiculo v5 = new Carro();
         Veiculo v6 = new Moto();
 
-        // processarPedagio(v1);
-        // processarPedagio(v2);
-        // processarPedagio(v3);
-        // processarPedagio(v4);
-        // processarPedagio(v5);
-        // processarPedagio(v6);
-        // RelatorioPedagio.exibirRelatorio();
+        processarPedagio(v1);
+        processarPedagio(v2);
+        processarPedagio(v3);
+        processarPedagio(v4);
+        processarPedagio(v5);
+        processarPedagio(v6);
+        RelatorioPedagio.exibirRelatorio();
     }
 
-    // public static void processarPedagio(Veiculo veiculo) {
-    //     double valor = veiculo.calcularPedagio();
-    //     System.out.printf("Veículo: %s | Valor do Pedágio: R$ %.2f%n", veiculo.getTipo(), valor);
-    //     RelatorioPedagio.adicionarValor(valor);
-    // }
+    public static void processarPedagio(Veiculo veiculo) {
+        double valor = veiculo.calcularPedagio();
+        System.out.printf("Veículo: %s | Valor do Pedágio: R$ %.2f%n", veiculo.getTipo(), valor);
+        RelatorioPedagio.adicionarValor(valor);
+    }
 }
